@@ -5,4 +5,4 @@ ADD requirements.txt .
 RUN pip install -r requirements.txt
 
 ADD . .
-CMD ["python", "main.py"]
+CMD ["python", "-u", "main.py"]
