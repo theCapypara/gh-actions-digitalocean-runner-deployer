@@ -9,7 +9,7 @@ and then droplets are shut down again.
 
 Workdir for all runner jobs is `/tmp/runner/work`. Runners are always ephemeral.
 
-To run, you can use the docker image `...` or run it manually (only Python 3.10 tested):
+To run, you can use the docker image `ghcr.io/thecapypara/gh-actions-digitalocean-runner-deployer:main` or run it manually (only Python 3.10 tested):
 ```sh
 pip install -r requirements.txt
 python main.py
@@ -17,7 +17,7 @@ python main.py
 
 Example run command with Docker:
 ```sh
-/usr/bin/docker run --rm --env-file ($pwd)/.env ...:latest
+/usr/bin/docker run --rm --env-file ($pwd)/.env ghcr.io/thecapypara/gh-actions-digitalocean-runner-deployer:main
 ```
 
 Configuration
